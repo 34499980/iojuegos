@@ -1,0 +1,29 @@
+<div style="text-align: center">
+  <h4 class="text-align-center">{{juego}}</h4>
+    <h1 class="text-align-center">Seleccione jugadores</h1>
+   <table style="width: 100%;" >
+     <tr style="width: 100%;">
+       <td class="forma" >
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Jugador1" [(ngModel)]="this.jugador1" >
+          </mat-form-field>
+       </td>
+     </tr>
+     <tr style="width: 100%;">
+        <td class="forma" >
+         <mat-form-field class="example-full-width">
+             <input matInput placeholder="Jugador2" [(ngModel)]="this.jugador2" >
+           </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+          <td>
+            <div class="example-button-row">
+            <button mat-fab color="primary" (click)='IniciarJuego()'>Jugar</button>
+            
+            </div>
+          </td>
+      </tr>
+   </table>
+   <br>  
+  </div>
