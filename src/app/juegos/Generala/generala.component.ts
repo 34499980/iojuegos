@@ -188,6 +188,7 @@ export class GENERALAComponent implements OnInit {
     if(this.ValidarFinal()){
       alert('El ganador es: '+ this.ganador)
     }
+   
   }
     
   }
