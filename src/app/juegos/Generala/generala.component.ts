@@ -92,93 +92,95 @@ export class GENERALAComponent implements OnInit {
     if(this.turno == 'Lanzar'){
     let posicion = Number(this.vecUser["vec"][this.usuarioID]._puntajes[index]._nombre);
     let vecPuntaje: number[] =[]
-    let numero=this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '0';
-    if(index <= 5){
-      let numero2 = Number(this.vecUser["vec"][this.usuarioID]._puntajes[index]._nombre)
-      for(let i=0; i<this.cantidad;i++){
-        if(this.dados[i].valor==numero2)
-        vecPuntaje.push(this.dados[i].valor)
-      }
-      if(vecPuntaje.length != 0){
-        let punto = Number(numero)
-        let j = vecPuntaje.length
-        for(let i=0; i < j ;i++)
-        punto += vecPuntaje.pop();
-        
-        this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = String(punto)
-      }
-    }else{
-      for(let i=0; i<this.cantidad;i++)
-      vecPuntaje.push(this.dados[i].valor)
-      vecPuntaje.sort();
-      //this.Sort(vecPuntaje);
-      switch(this.vecUser["vec"][this.usuarioID]._puntajes[index]._nombre){
-        case 'Escalera':
-        if(this.ValidarEscalera(vecPuntaje)){
-          if(this.tiros == 1){
-            this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '30'
-          }else{
-            this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '25'
-          }
-        }else{
-          this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor ='0'
+    if(this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor == '-'){
+      let numero=this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '0';
+        if(index <= 5){
+        let numero2 = Number(this.vecUser["vec"][this.usuarioID]._puntajes[index]._nombre)
+        for(let i=0; i<this.cantidad;i++){
+          if(this.dados[i].valor==numero2)
+          vecPuntaje.push(this.dados[i].valor)
         }
-          break;
-          case 'Full':
-          if(this.ValidarIguales(vecPuntaje,'FULL')){
+        if(vecPuntaje.length != 0){
+          let punto = Number(numero)
+          let j = vecPuntaje.length
+          for(let i=0; i < j ;i++)
+          punto += vecPuntaje.pop();
+          
+          this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = String(punto)
+        }
+      }else{
+        for(let i=0; i<this.cantidad;i++)
+        vecPuntaje.push(this.dados[i].valor)
+        vecPuntaje.sort();
+        //this.Sort(vecPuntaje);
+        switch(this.vecUser["vec"][this.usuarioID]._puntajes[index]._nombre){
+          case 'Escalera':
+          if(this.ValidarEscalera(vecPuntaje)){
             if(this.tiros == 1){
-              this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '35'
-            }else{
               this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '30'
-            }
-          }else{
-            this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor ='0'
-          }
-          break;
-          case 'Poker':
-          if(this.ValidarIguales(vecPuntaje,'POKER')){
-            if(this.tiros == 1){
-              this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '45'
             }else{
-              this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '40'
+              this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '25'
             }
           }else{
             this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor ='0'
           }
-          break;
-          case 'Generala':
-          if(this.ValidarIguales(vecPuntaje,'GENERALA')){
-            if(this.tiros == 1){
-              this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '100'
-            }else{
-              this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '50'
-            }
-          }else{
-            this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor ='0'
-          }
-          break;
-          case 'Generala Doble':
-          if(this.ValidarIguales(vecPuntaje,'GENERALA DOBLE')){
-            if(this.tiros == 1){
-              if(this.vecUser["vec"][this.usuarioID]._puntajes[index-1]._valor == '-'){
-                this.vecUser["vec"][this.usuarioID]._puntajes[index-1]._valor = '100'
+            break;
+            case 'Full':
+            if(this.ValidarIguales(vecPuntaje,'FULL')){
+              if(this.tiros == 1){
+                this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '35'
               }else{
-              this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '200'
+                this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '30'
               }
             }else{
-              if(this.vecUser["vec"][this.usuarioID]._puntajes[index-1]._valor == '-'){
-                this.vecUser["vec"][this.usuarioID]._puntajes[index-1]._valor = '50'
+              this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor ='0'
+            }
+            break;
+            case 'Poker':
+            if(this.ValidarIguales(vecPuntaje,'POKER')){
+              if(this.tiros == 1){
+                this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '45'
               }else{
+                this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '40'
+              }
+            }else{
+              this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor ='0'
+            }
+            break;
+            case 'Generala':
+            if(this.ValidarIguales(vecPuntaje,'GENERALA')){
+              if(this.tiros == 1){
                 this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '100'
+              }else{
+                this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '50'
               }
-             
+            }else{
+              this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor ='0'
             }
-           }else{
-            this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor ='0'
-           }
-          break;
-      }
+            break;
+            case 'Generala Doble':
+            if(this.ValidarIguales(vecPuntaje,'GENERALA DOBLE')){
+              if(this.tiros == 1){
+                if(this.vecUser["vec"][this.usuarioID]._puntajes[index-1]._valor == '-'){
+                  this.vecUser["vec"][this.usuarioID]._puntajes[index-1]._valor = '100'
+                }else{
+                this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '200'
+                }
+              }else{
+                if(this.vecUser["vec"][this.usuarioID]._puntajes[index-1]._valor == '-'){
+                  this.vecUser["vec"][this.usuarioID]._puntajes[index-1]._valor = '50'
+                }else{
+                  this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '100'
+                }
+              
+              }
+            }else{
+              this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor ='0'
+            }
+            break;
+        }
 
+      }
     }
     this.totales = this.CalcularTotales(this.vecUser["vec"][this.usuarioID]._puntajes)
     this.turno = 'Jugar';

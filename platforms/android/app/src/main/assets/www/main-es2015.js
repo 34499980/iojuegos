@@ -1074,7 +1074,7 @@ DadoComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".forma {\r\n  width: 5rem;  \r\n  height: 5rem;\r\n  font-size: 3rem;\r\n  color:white;\r\n  background-color: black;\r\n  border-radius: 1rem;\r\n  display: -webkit-inline-box;\r\n  display: inline-flex;\r\n  -webkit-box-pack: center;\r\n          justify-content: center;\r\n  -webkit-box-align: center;\r\n          align-items: center;\r\n  margin:10px;\r\n}\r\n  .text-align-center{\r\n    text-align: center;\r\n  }\r\n  .myClass{\r\n    color : darkgray;\r\n  }\r\n  @media (max-width: 500px) {\r\n    .forma {\r\n      width: 3rem;  \r\n      height: 3rem;\r\n      font-size: 30px;\r\n      color:white;\r\n      background-color: black;\r\n      border-radius: 1rem;\r\n      display: -webkit-inline-box;\r\n      display: inline-flex;\r\n      -webkit-box-pack: center;\r\n              justify-content: center;\r\n      -webkit-box-align: center;\r\n              align-items: center;\r\n      margin:10px;\r\n    }\r\n  }\r\n \r\n  \r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvanVlZ29zL0dlbmVyYWxhL2dlbmVyYWxhLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxXQUFXO0VBQ1gsWUFBWTtFQUNaLGVBQWU7RUFDZixXQUFXO0VBQ1gsdUJBQXVCO0VBQ3ZCLG1CQUFtQjtFQUNuQiwyQkFBb0I7RUFBcEIsb0JBQW9CO0VBQ3BCLHdCQUF1QjtVQUF2Qix1QkFBdUI7RUFDdkIseUJBQW1CO1VBQW5CLG1CQUFtQjtFQUNuQixXQUFXO0FBQ2I7RUFDRTtJQUNFLGtCQUFrQjtFQUNwQjtFQUNBO0lBQ0UsZ0JBQWdCO0VBQ2xCO0VBQ0E7SUFDRTtNQUNFLFdBQVc7TUFDWCxZQUFZO01BQ1osZUFBZTtNQUNmLFdBQVc7TUFDWCx1QkFBdUI7TUFDdkIsbUJBQW1CO01BQ25CLDJCQUFvQjtNQUFwQixvQkFBb0I7TUFDcEIsd0JBQXVCO2NBQXZCLHVCQUF1QjtNQUN2Qix5QkFBbUI7Y0FBbkIsbUJBQW1CO01BQ25CLFdBQVc7SUFDYjtFQUNGIiwiZmlsZSI6InNyYy9hcHAvanVlZ29zL0dlbmVyYWxhL2dlbmVyYWxhLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZm9ybWEge1xyXG4gIHdpZHRoOiA1cmVtOyAgXHJcbiAgaGVpZ2h0OiA1cmVtO1xyXG4gIGZvbnQtc2l6ZTogM3JlbTtcclxuICBjb2xvcjp3aGl0ZTtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcclxuICBib3JkZXItcmFkaXVzOiAxcmVtO1xyXG4gIGRpc3BsYXk6IGlubGluZS1mbGV4O1xyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgbWFyZ2luOjEwcHg7XHJcbn1cclxuICAudGV4dC1hbGlnbi1jZW50ZXJ7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgfVxyXG4gIC5teUNsYXNze1xyXG4gICAgY29sb3IgOiBkYXJrZ3JheTtcclxuICB9XHJcbiAgQG1lZGlhIChtYXgtd2lkdGg6IDUwMHB4KSB7XHJcbiAgICAuZm9ybWEge1xyXG4gICAgICB3aWR0aDogM3JlbTsgIFxyXG4gICAgICBoZWlnaHQ6IDNyZW07XHJcbiAgICAgIGZvbnQtc2l6ZTogMzBweDtcclxuICAgICAgY29sb3I6d2hpdGU7XHJcbiAgICAgIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xyXG4gICAgICBib3JkZXItcmFkaXVzOiAxcmVtO1xyXG4gICAgICBkaXNwbGF5OiBpbmxpbmUtZmxleDtcclxuICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICAgIG1hcmdpbjoxMHB4O1xyXG4gICAgfVxyXG4gIH1cclxuIFxyXG4gICJdfQ== */");
+/* harmony default export */ __webpack_exports__["default"] = (".forma {\r\n  width: 5rem;  \r\n  height: 5rem;\r\n  font-size: 3rem;\r\n  color:white;\r\n  background-color: black;\r\n  border-radius: 1rem;\r\n  display: -webkit-inline-box;\r\n  display: inline-flex;\r\n  -webkit-box-pack: center;\r\n          justify-content: center;\r\n  -webkit-box-align: center;\r\n          align-items: center;\r\n  margin:10px;\r\n}\r\n  .text-align-center{\r\n    text-align: center;\r\n  }\r\n  .myClass{\r\n    color : darkgray;\r\n  }\r\n  @media (max-width: 500px) {\r\n    .forma {\r\n      width: 3rem;  \r\n      height: 3rem;\r\n      font-size: 30px;\r\n      color:white;\r\n      background-color: black;\r\n      border-radius: 1rem;\r\n      display: -webkit-inline-box;\r\n      display: inline-flex;\r\n      -webkit-box-pack: center;\r\n              justify-content: center;\r\n      -webkit-box-align: center;\r\n              align-items: center;\r\n      margin:10px;\r\n    }\r\n    .myClass{\r\n      color : chartreuse;\r\n    }\r\n  }\r\n \r\n  \r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvanVlZ29zL0dlbmVyYWxhL2dlbmVyYWxhLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxXQUFXO0VBQ1gsWUFBWTtFQUNaLGVBQWU7RUFDZixXQUFXO0VBQ1gsdUJBQXVCO0VBQ3ZCLG1CQUFtQjtFQUNuQiwyQkFBb0I7RUFBcEIsb0JBQW9CO0VBQ3BCLHdCQUF1QjtVQUF2Qix1QkFBdUI7RUFDdkIseUJBQW1CO1VBQW5CLG1CQUFtQjtFQUNuQixXQUFXO0FBQ2I7RUFDRTtJQUNFLGtCQUFrQjtFQUNwQjtFQUNBO0lBQ0UsZ0JBQWdCO0VBQ2xCO0VBQ0E7SUFDRTtNQUNFLFdBQVc7TUFDWCxZQUFZO01BQ1osZUFBZTtNQUNmLFdBQVc7TUFDWCx1QkFBdUI7TUFDdkIsbUJBQW1CO01BQ25CLDJCQUFvQjtNQUFwQixvQkFBb0I7TUFDcEIsd0JBQXVCO2NBQXZCLHVCQUF1QjtNQUN2Qix5QkFBbUI7Y0FBbkIsbUJBQW1CO01BQ25CLFdBQVc7SUFDYjtJQUNBO01BQ0Usa0JBQWtCO0lBQ3BCO0VBQ0YiLCJmaWxlIjoic3JjL2FwcC9qdWVnb3MvR2VuZXJhbGEvZ2VuZXJhbGEuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5mb3JtYSB7XHJcbiAgd2lkdGg6IDVyZW07ICBcclxuICBoZWlnaHQ6IDVyZW07XHJcbiAgZm9udC1zaXplOiAzcmVtO1xyXG4gIGNvbG9yOndoaXRlO1xyXG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xyXG4gIGJvcmRlci1yYWRpdXM6IDFyZW07XHJcbiAgZGlzcGxheTogaW5saW5lLWZsZXg7XHJcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICBtYXJnaW46MTBweDtcclxufVxyXG4gIC50ZXh0LWFsaWduLWNlbnRlcntcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICB9XHJcbiAgLm15Q2xhc3N7XHJcbiAgICBjb2xvciA6IGRhcmtncmF5O1xyXG4gIH1cclxuICBAbWVkaWEgKG1heC13aWR0aDogNTAwcHgpIHtcclxuICAgIC5mb3JtYSB7XHJcbiAgICAgIHdpZHRoOiAzcmVtOyAgXHJcbiAgICAgIGhlaWdodDogM3JlbTtcclxuICAgICAgZm9udC1zaXplOiAzMHB4O1xyXG4gICAgICBjb2xvcjp3aGl0ZTtcclxuICAgICAgYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7XHJcbiAgICAgIGJvcmRlci1yYWRpdXM6IDFyZW07XHJcbiAgICAgIGRpc3BsYXk6IGlubGluZS1mbGV4O1xyXG4gICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgICAgbWFyZ2luOjEwcHg7XHJcbiAgICB9XHJcbiAgICAubXlDbGFzc3tcclxuICAgICAgY29sb3IgOiBjaGFydHJldXNlO1xyXG4gICAgfVxyXG4gIH1cclxuIFxyXG4gICJdfQ== */");
 
 /***/ }),
 
@@ -1174,102 +1174,104 @@ let GENERALAComponent = class GENERALAComponent {
         if (this.turno == 'Lanzar') {
             let posicion = Number(this.vecUser["vec"][this.usuarioID]._puntajes[index]._nombre);
             let vecPuntaje = [];
-            let numero = this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '0';
-            if (index <= 5) {
-                let numero2 = Number(this.vecUser["vec"][this.usuarioID]._puntajes[index]._nombre);
-                for (let i = 0; i < this.cantidad; i++) {
-                    if (this.dados[i].valor == numero2)
+            if (this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor == '-') {
+                let numero = this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '0';
+                if (index <= 5) {
+                    let numero2 = Number(this.vecUser["vec"][this.usuarioID]._puntajes[index]._nombre);
+                    for (let i = 0; i < this.cantidad; i++) {
+                        if (this.dados[i].valor == numero2)
+                            vecPuntaje.push(this.dados[i].valor);
+                    }
+                    if (vecPuntaje.length != 0) {
+                        let punto = Number(numero);
+                        let j = vecPuntaje.length;
+                        for (let i = 0; i < j; i++)
+                            punto += vecPuntaje.pop();
+                        this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = String(punto);
+                    }
+                }
+                else {
+                    for (let i = 0; i < this.cantidad; i++)
                         vecPuntaje.push(this.dados[i].valor);
-                }
-                if (vecPuntaje.length != 0) {
-                    let punto = Number(numero);
-                    let j = vecPuntaje.length;
-                    for (let i = 0; i < j; i++)
-                        punto += vecPuntaje.pop();
-                    this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = String(punto);
-                }
-            }
-            else {
-                for (let i = 0; i < this.cantidad; i++)
-                    vecPuntaje.push(this.dados[i].valor);
-                vecPuntaje.sort();
-                //this.Sort(vecPuntaje);
-                switch (this.vecUser["vec"][this.usuarioID]._puntajes[index]._nombre) {
-                    case 'Escalera':
-                        if (this.ValidarEscalera(vecPuntaje)) {
-                            if (this.tiros == 1) {
-                                this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '30';
-                            }
-                            else {
-                                this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '25';
-                            }
-                        }
-                        else {
-                            this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '0';
-                        }
-                        break;
-                    case 'Full':
-                        if (this.ValidarIguales(vecPuntaje, 'FULL')) {
-                            if (this.tiros == 1) {
-                                this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '35';
-                            }
-                            else {
-                                this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '30';
-                            }
-                        }
-                        else {
-                            this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '0';
-                        }
-                        break;
-                    case 'Poker':
-                        if (this.ValidarIguales(vecPuntaje, 'POKER')) {
-                            if (this.tiros == 1) {
-                                this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '45';
-                            }
-                            else {
-                                this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '40';
-                            }
-                        }
-                        else {
-                            this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '0';
-                        }
-                        break;
-                    case 'Generala':
-                        if (this.ValidarIguales(vecPuntaje, 'GENERALA')) {
-                            if (this.tiros == 1) {
-                                this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '100';
-                            }
-                            else {
-                                this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '50';
-                            }
-                        }
-                        else {
-                            this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '0';
-                        }
-                        break;
-                    case 'Generala Doble':
-                        if (this.ValidarIguales(vecPuntaje, 'GENERALA DOBLE')) {
-                            if (this.tiros == 1) {
-                                if (this.vecUser["vec"][this.usuarioID]._puntajes[index - 1]._valor == '-') {
-                                    this.vecUser["vec"][this.usuarioID]._puntajes[index - 1]._valor = '100';
+                    vecPuntaje.sort();
+                    //this.Sort(vecPuntaje);
+                    switch (this.vecUser["vec"][this.usuarioID]._puntajes[index]._nombre) {
+                        case 'Escalera':
+                            if (this.ValidarEscalera(vecPuntaje)) {
+                                if (this.tiros == 1) {
+                                    this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '30';
                                 }
                                 else {
-                                    this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '200';
+                                    this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '25';
                                 }
                             }
                             else {
-                                if (this.vecUser["vec"][this.usuarioID]._puntajes[index - 1]._valor == '-') {
-                                    this.vecUser["vec"][this.usuarioID]._puntajes[index - 1]._valor = '50';
+                                this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '0';
+                            }
+                            break;
+                        case 'Full':
+                            if (this.ValidarIguales(vecPuntaje, 'FULL')) {
+                                if (this.tiros == 1) {
+                                    this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '35';
                                 }
                                 else {
+                                    this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '30';
+                                }
+                            }
+                            else {
+                                this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '0';
+                            }
+                            break;
+                        case 'Poker':
+                            if (this.ValidarIguales(vecPuntaje, 'POKER')) {
+                                if (this.tiros == 1) {
+                                    this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '45';
+                                }
+                                else {
+                                    this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '40';
+                                }
+                            }
+                            else {
+                                this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '0';
+                            }
+                            break;
+                        case 'Generala':
+                            if (this.ValidarIguales(vecPuntaje, 'GENERALA')) {
+                                if (this.tiros == 1) {
                                     this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '100';
                                 }
+                                else {
+                                    this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '50';
+                                }
                             }
-                        }
-                        else {
-                            this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '0';
-                        }
-                        break;
+                            else {
+                                this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '0';
+                            }
+                            break;
+                        case 'Generala Doble':
+                            if (this.ValidarIguales(vecPuntaje, 'GENERALA DOBLE')) {
+                                if (this.tiros == 1) {
+                                    if (this.vecUser["vec"][this.usuarioID]._puntajes[index - 1]._valor == '-') {
+                                        this.vecUser["vec"][this.usuarioID]._puntajes[index - 1]._valor = '100';
+                                    }
+                                    else {
+                                        this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '200';
+                                    }
+                                }
+                                else {
+                                    if (this.vecUser["vec"][this.usuarioID]._puntajes[index - 1]._valor == '-') {
+                                        this.vecUser["vec"][this.usuarioID]._puntajes[index - 1]._valor = '50';
+                                    }
+                                    else {
+                                        this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '100';
+                                    }
+                                }
+                            }
+                            else {
+                                this.vecUser["vec"][this.usuarioID]._puntajes[index]._valor = '0';
+                            }
+                            break;
+                    }
                 }
             }
             this.totales = this.CalcularTotales(this.vecUser["vec"][this.usuarioID]._puntajes);
@@ -1451,7 +1453,7 @@ DadoComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".forma {\r\n  width: 5rem;  \r\n  height: 5rem;\r\n  font-size: 3rem;\r\n  color:white;\r\n  background-color: black;\r\n  border-radius: 1rem;\r\n  display: -webkit-inline-box;\r\n  display: inline-flex;\r\n  -webkit-box-pack: center;\r\n          justify-content: center;\r\n  -webkit-box-align: center;\r\n          align-items: center;\r\n  margin:10px;\r\n}\r\n  .text-align-center{\r\n    text-align: center;\r\n  }\r\n  .myClass{\r\n    color : darkgray;\r\n  }\r\n  @media (max-width: 500px) {\r\n    .forma {\r\n      width: 3rem;  \r\n      height: 3rem;\r\n      font-size: 30px;\r\n      color:white;\r\n      background-color: black;\r\n      border-radius: 1rem;\r\n      display: -webkit-inline-box;\r\n      display: inline-flex;\r\n      -webkit-box-pack: center;\r\n              justify-content: center;\r\n      -webkit-box-align: center;\r\n              align-items: center;\r\n      margin:10px;\r\n    }\r\n  }\r\n \r\n  \r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvanVlZ29zL0dlbmVyYWxhT2JsaWdhZGEvZ2VuZXJhbGEuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0VBQ1osZUFBZTtFQUNmLFdBQVc7RUFDWCx1QkFBdUI7RUFDdkIsbUJBQW1CO0VBQ25CLDJCQUFvQjtFQUFwQixvQkFBb0I7RUFDcEIsd0JBQXVCO1VBQXZCLHVCQUF1QjtFQUN2Qix5QkFBbUI7VUFBbkIsbUJBQW1CO0VBQ25CLFdBQVc7QUFDYjtFQUNFO0lBQ0Usa0JBQWtCO0VBQ3BCO0VBQ0E7SUFDRSxnQkFBZ0I7RUFDbEI7RUFDQTtJQUNFO01BQ0UsV0FBVztNQUNYLFlBQVk7TUFDWixlQUFlO01BQ2YsV0FBVztNQUNYLHVCQUF1QjtNQUN2QixtQkFBbUI7TUFDbkIsMkJBQW9CO01BQXBCLG9CQUFvQjtNQUNwQix3QkFBdUI7Y0FBdkIsdUJBQXVCO01BQ3ZCLHlCQUFtQjtjQUFuQixtQkFBbUI7TUFDbkIsV0FBVztJQUNiO0VBQ0YiLCJmaWxlIjoic3JjL2FwcC9qdWVnb3MvR2VuZXJhbGFPYmxpZ2FkYS9nZW5lcmFsYS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZvcm1hIHtcclxuICB3aWR0aDogNXJlbTsgIFxyXG4gIGhlaWdodDogNXJlbTtcclxuICBmb250LXNpemU6IDNyZW07XHJcbiAgY29sb3I6d2hpdGU7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7XHJcbiAgYm9yZGVyLXJhZGl1czogMXJlbTtcclxuICBkaXNwbGF5OiBpbmxpbmUtZmxleDtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIG1hcmdpbjoxMHB4O1xyXG59XHJcbiAgLnRleHQtYWxpZ24tY2VudGVye1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIH1cclxuICAubXlDbGFzc3tcclxuICAgIGNvbG9yIDogZGFya2dyYXk7XHJcbiAgfVxyXG4gIEBtZWRpYSAobWF4LXdpZHRoOiA1MDBweCkge1xyXG4gICAgLmZvcm1hIHtcclxuICAgICAgd2lkdGg6IDNyZW07ICBcclxuICAgICAgaGVpZ2h0OiAzcmVtO1xyXG4gICAgICBmb250LXNpemU6IDMwcHg7XHJcbiAgICAgIGNvbG9yOndoaXRlO1xyXG4gICAgICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcclxuICAgICAgYm9yZGVyLXJhZGl1czogMXJlbTtcclxuICAgICAgZGlzcGxheTogaW5saW5lLWZsZXg7XHJcbiAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAgICBtYXJnaW46MTBweDtcclxuICAgIH1cclxuICB9XHJcbiBcclxuICAiXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = (".forma {\r\n  width: 5rem;  \r\n  height: 5rem;\r\n  font-size: 3rem;\r\n  color:white;\r\n  background-color: black;\r\n  border-radius: 1rem;\r\n  display: -webkit-inline-box;\r\n  display: inline-flex;\r\n  -webkit-box-pack: center;\r\n          justify-content: center;\r\n  -webkit-box-align: center;\r\n          align-items: center;\r\n  margin:10px;\r\n}\r\n  .text-align-center{\r\n    text-align: center;\r\n  }\r\n  .myClass{\r\n    color : darkgray;\r\n  }\r\n  @media (max-width: 500px) {\r\n    .forma {\r\n      width: 3rem;  \r\n      height: 3rem;\r\n      font-size: 30px;\r\n      color:white;\r\n      background-color: black;\r\n      border-radius: 1rem;\r\n      display: -webkit-inline-box;\r\n      display: inline-flex;\r\n      -webkit-box-pack: center;\r\n              justify-content: center;\r\n      -webkit-box-align: center;\r\n              align-items: center;\r\n      margin:10px;\r\n    }\r\n    .myClass{\r\n      color : chartreuse;\r\n    }\r\n  }\r\n \r\n  \r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvanVlZ29zL0dlbmVyYWxhT2JsaWdhZGEvZ2VuZXJhbGEuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0VBQ1osZUFBZTtFQUNmLFdBQVc7RUFDWCx1QkFBdUI7RUFDdkIsbUJBQW1CO0VBQ25CLDJCQUFvQjtFQUFwQixvQkFBb0I7RUFDcEIsd0JBQXVCO1VBQXZCLHVCQUF1QjtFQUN2Qix5QkFBbUI7VUFBbkIsbUJBQW1CO0VBQ25CLFdBQVc7QUFDYjtFQUNFO0lBQ0Usa0JBQWtCO0VBQ3BCO0VBQ0E7SUFDRSxnQkFBZ0I7RUFDbEI7RUFDQTtJQUNFO01BQ0UsV0FBVztNQUNYLFlBQVk7TUFDWixlQUFlO01BQ2YsV0FBVztNQUNYLHVCQUF1QjtNQUN2QixtQkFBbUI7TUFDbkIsMkJBQW9CO01BQXBCLG9CQUFvQjtNQUNwQix3QkFBdUI7Y0FBdkIsdUJBQXVCO01BQ3ZCLHlCQUFtQjtjQUFuQixtQkFBbUI7TUFDbkIsV0FBVztJQUNiO0lBQ0E7TUFDRSxrQkFBa0I7SUFDcEI7RUFDRiIsImZpbGUiOiJzcmMvYXBwL2p1ZWdvcy9HZW5lcmFsYU9ibGlnYWRhL2dlbmVyYWxhLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZm9ybWEge1xyXG4gIHdpZHRoOiA1cmVtOyAgXHJcbiAgaGVpZ2h0OiA1cmVtO1xyXG4gIGZvbnQtc2l6ZTogM3JlbTtcclxuICBjb2xvcjp3aGl0ZTtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcclxuICBib3JkZXItcmFkaXVzOiAxcmVtO1xyXG4gIGRpc3BsYXk6IGlubGluZS1mbGV4O1xyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgbWFyZ2luOjEwcHg7XHJcbn1cclxuICAudGV4dC1hbGlnbi1jZW50ZXJ7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgfVxyXG4gIC5teUNsYXNze1xyXG4gICAgY29sb3IgOiBkYXJrZ3JheTtcclxuICB9XHJcbiAgQG1lZGlhIChtYXgtd2lkdGg6IDUwMHB4KSB7XHJcbiAgICAuZm9ybWEge1xyXG4gICAgICB3aWR0aDogM3JlbTsgIFxyXG4gICAgICBoZWlnaHQ6IDNyZW07XHJcbiAgICAgIGZvbnQtc2l6ZTogMzBweDtcclxuICAgICAgY29sb3I6d2hpdGU7XHJcbiAgICAgIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xyXG4gICAgICBib3JkZXItcmFkaXVzOiAxcmVtO1xyXG4gICAgICBkaXNwbGF5OiBpbmxpbmUtZmxleDtcclxuICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICAgIG1hcmdpbjoxMHB4O1xyXG4gICAgfVxyXG4gICAgLm15Q2xhc3N7XHJcbiAgICAgIGNvbG9yIDogY2hhcnRyZXVzZTtcclxuICAgIH1cclxuICB9XHJcbiBcclxuICAiXX0= */");
 
 /***/ }),
 
