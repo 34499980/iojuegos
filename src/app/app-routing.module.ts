@@ -4,6 +4,7 @@ import { SelectUsersComponent } from './usuarios/select-users/select-users.compo
 import { TATETIComponent } from './juegos/tateti/tateti.component';
 import { GENERALAComponent } from './juegos/Generala/generala.component';
 import { GENERALAObligadaComponent } from './juegos/GeneralaObligada/generala.component';
+import { DiezMilComponent } from './juegos/Diezmil/DiezMil.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -13,6 +14,8 @@ const routes: Routes = [
   { path: 'GENERALA',component:GENERALAComponent, pathMatch: 'full' },
   { path: 'user-GENERALA-Obligada',component:SelectUsersComponent,data: {juego:"GENERALAObligada"}, pathMatch: 'full' },
   { path: 'GENERALAObligada',component:GENERALAObligadaComponent, pathMatch: 'full' },
+  { path: 'user-DiezMil',component:SelectUsersComponent,data: {juego:"DiezMil"}, pathMatch: 'full' },
+  { path: 'DiezMil',component:DiezMilComponent, pathMatch: 'full' },
  
 ];
 

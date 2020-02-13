@@ -1,0 +1,41 @@
+<div class="text-align-center">
+  <h1 class="text-align-center">10000</h1>
+ <table style="width: 50%;" class='responsive-table' >
+  <tr>
+    <td>
+    <table style="width: 20%;" class='responsive-table'>
+       <tr style="width: 20%;">
+         <td  *ngFor='let dado of dados ; let i = index' >
+          <button  [class.myClass]="!dado.selected" class="forma" (click)="Select(i)"> {{dado.valor}}</button> 
+         </td>
+       </tr>         
+    </table>
+  </td>
+  <td>
+    <table style="width: 20%; height: 50%;"border="1" >
+     
+      <tr style="width: 20%;">
+        <td><a>Acumulado</a></td><td><a>{{acumulado}}</a></td>
+      </tr>
+      <tr style="width: 20%;">
+        <td><a>Partida</a></td><td><a>{{partida}}</a></td>
+      </tr>
+      <tr style="width: 20%;">
+        <td><a>Total</a></td><td><a>{{totales}}</a></td>
+      </tr>
+      
+        
+     
+    </table>
+    <button mat-button color="primary" (click)="MarcarPuntaje()">Anotar</button>
+  </td>
+  </tr>
+ </table>
+ <br>
+ <div style="text-align: center">
+  <h1 class="text-align-center">Turno: {{usuario}}</h1>
+  <h2 class="text-align-center">Tiros: {{tiros}}</h2>
+  <button mat-button color="primary" (click)="lanzar()">{{turno}}</button>
+</div>
+ 
+</div>
