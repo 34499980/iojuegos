@@ -456,7 +456,33 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<mat-toolbar color=\"primary\">\r\n  <mat-toolbar-row>\r\n    <button mat-icon-button>\r\n      <mat-icon (click)=\"sidenav.toggle()\">menu</mat-icon>\r\n    </button>\r\n    <h1>Juegos</h1>\r\n    <span class=\"menu-spacer\"></span>\r\n    \r\n  </mat-toolbar-row>\r\n\r\n \r\n</mat-toolbar>\r\n\r\n<mat-sidenav-container>\r\n  <mat-sidenav #sidenav>\r\n    <mat-nav-list>\r\n\r\n     <a mat-list-item href=\"user-GENERALA\">Generala</a>\r\n     <a mat-list-item href=\"user-GENERALA-Obligada\">Generala Obligada</a>\r\n     <a mat-list-item href=\"user-TATETI\">TA TE TI</a>       \r\n     \r\n   \r\n\r\n    </mat-nav-list>\r\n  </mat-sidenav>\r\n  <mat-sidenav-content>\r\n    <div style=\"height: 88vh;\">\r\n\r\n      <router-outlet></router-outlet>\r\n    </div>\r\n  </mat-sidenav-content>\r\n</mat-sidenav-container>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<mat-toolbar color=\"primary\">\r\n  <mat-toolbar-row>\r\n    <button mat-icon-button>\r\n      <mat-icon (click)=\"sidenav.toggle()\">menu</mat-icon>\r\n    </button>\r\n    <h1>Juegos</h1>\r\n    <span class=\"menu-spacer\"></span>\r\n    \r\n  </mat-toolbar-row>\r\n\r\n \r\n</mat-toolbar>\r\n\r\n<mat-sidenav-container>\r\n  <mat-sidenav #sidenav>\r\n    <mat-nav-list>\r\n\r\n     <a mat-list-item href=\"user-GENERALA\">Generala</a>\r\n     <a mat-list-item href=\"user-GENERALA-Obligada\">Generala Obligada</a>\r\n     <a mat-list-item href=\"user-TATETI\">TA TE TI</a>   \r\n     <a mat-list-item href=\"user-DiezMil\">10.000</a>     \r\n     \r\n   \r\n\r\n    </mat-nav-list>\r\n  </mat-sidenav>\r\n  <mat-sidenav-content>\r\n    <div style=\"height: 88vh;\">\r\n\r\n      <router-outlet></router-outlet>\r\n    </div>\r\n  </mat-sidenav-content>\r\n</mat-sidenav-container>\r\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/juegos/Diezmil/DiezMil.component.html":
+/*!*********************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/juegos/Diezmil/DiezMil.component.html ***!
+  \*********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"text-align-center\">\r\n  <h1 class=\"text-align-center\">10000</h1>\r\n <table style=\"width: 50%;\" class='responsive-table' >\r\n  <tr>\r\n    <td>\r\n    <table style=\"width: 20%;\" class='responsive-table'>\r\n       <tr style=\"width: 20%;\">\r\n         <td  *ngFor='let dado of dados ; let i = index' >\r\n          <button  [class.myClass]=\"!dado.selected\" class=\"forma\" (click)=\"Select(i)\"> {{dado.valor}}</button> \r\n         </td>\r\n       </tr>         \r\n    </table>\r\n  </td>\r\n  <td>\r\n    <table style=\"width: 20%; height: 50%;\"border=\"1\" >\r\n     \r\n      <tr style=\"width: 20%;\">\r\n        <td><a>Acumulado</a></td><td><a>{{acumulado}}</a></td>\r\n      </tr>\r\n      <tr style=\"width: 20%;\">\r\n        <td><a>Partida</a></td><td><a>{{partida}}</a></td>\r\n      </tr>\r\n      <tr style=\"width: 20%;\">\r\n        <td><a>Total</a></td><td><a>{{totales}}</a></td>\r\n      </tr>\r\n      \r\n        \r\n     \r\n    </table>\r\n    <button mat-button color=\"primary\" (click)=\"MarcarPuntaje()\">Anotar</button>\r\n  </td>\r\n  </tr>\r\n </table>\r\n <br>\r\n <div style=\"text-align: center\">\r\n  <h1 class=\"text-align-center\">Turno: {{usuario}}</h1>\r\n  <h2 class=\"text-align-center\">Tiros: {{tiros}}</h2>\r\n  <button mat-button color=\"primary\" (click)=\"lanzar()\">{{turno}}</button>\r\n</div>\r\n \r\n</div>\r\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/juegos/Diezmil/dado.component.html":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/juegos/Diezmil/dado.component.html ***!
+  \******************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"forma btn-responsive\">\r\n    {{valor}}\r\n  </div>\r\n");
 
 /***/ }),
 
@@ -784,6 +810,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _juegos_tateti_tateti_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./juegos/tateti/tateti.component */ "./src/app/juegos/tateti/tateti.component.ts");
 /* harmony import */ var _juegos_Generala_generala_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./juegos/Generala/generala.component */ "./src/app/juegos/Generala/generala.component.ts");
 /* harmony import */ var _juegos_GeneralaObligada_generala_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./juegos/GeneralaObligada/generala.component */ "./src/app/juegos/GeneralaObligada/generala.component.ts");
+/* harmony import */ var _juegos_Diezmil_DiezMil_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./juegos/Diezmil/DiezMil.component */ "./src/app/juegos/Diezmil/DiezMil.component.ts");
+
 
 
 
@@ -799,6 +827,8 @@ const routes = [
     { path: 'GENERALA', component: _juegos_Generala_generala_component__WEBPACK_IMPORTED_MODULE_5__["GENERALAComponent"], pathMatch: 'full' },
     { path: 'user-GENERALA-Obligada', component: _usuarios_select_users_select_users_component__WEBPACK_IMPORTED_MODULE_3__["SelectUsersComponent"], data: { juego: "GENERALAObligada" }, pathMatch: 'full' },
     { path: 'GENERALAObligada', component: _juegos_GeneralaObligada_generala_component__WEBPACK_IMPORTED_MODULE_6__["GENERALAObligadaComponent"], pathMatch: 'full' },
+    { path: 'user-DiezMil', component: _usuarios_select_users_select_users_component__WEBPACK_IMPORTED_MODULE_3__["SelectUsersComponent"], data: { juego: "DiezMil" }, pathMatch: 'full' },
+    { path: 'DiezMil', component: _juegos_Diezmil_DiezMil_component__WEBPACK_IMPORTED_MODULE_7__["DiezMilComponent"], pathMatch: 'full' },
 ];
 let AppRoutingModule = class AppRoutingModule {
 };
@@ -1009,6 +1039,305 @@ BarraLateralComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_cdk_layout__WEBPACK_IMPORTED_MODULE_2__["BreakpointObserver"]])
 ], BarraLateralComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/juegos/Diezmil/DiezMil.component.css":
+/*!******************************************************!*\
+  !*** ./src/app/juegos/Diezmil/DiezMil.component.css ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".forma {\r\n  width: 5rem;  \r\n  height: 5rem;\r\n  font-size: 3rem;\r\n  color:white;\r\n  background-color: black;\r\n  border-radius: 1rem;\r\n  display: -webkit-inline-box;\r\n  display: inline-flex;\r\n  -webkit-box-pack: center;\r\n          justify-content: center;\r\n  -webkit-box-align: center;\r\n          align-items: center;\r\n  margin:10px;\r\n}\r\n  .text-align-center{\r\n    text-align: center;\r\n  }\r\n  .myClass{\r\n    color : darkgray;\r\n  }\r\n  @media (max-width: 500px) {\r\n    .forma {\r\n      width: 3rem;  \r\n      height: 3rem;\r\n      font-size: 30px;\r\n      color:white;\r\n      background-color: black;\r\n      border-radius: 1rem;\r\n      display: -webkit-inline-box;\r\n      display: inline-flex;\r\n      -webkit-box-pack: center;\r\n              justify-content: center;\r\n      -webkit-box-align: center;\r\n              align-items: center;\r\n      margin:10px;\r\n    }\r\n    .myClass{\r\n      color : chartreuse;\r\n    }\r\n  }\r\n \r\n  \r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvanVlZ29zL0RpZXptaWwvRGllek1pbC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsV0FBVztFQUNYLFlBQVk7RUFDWixlQUFlO0VBQ2YsV0FBVztFQUNYLHVCQUF1QjtFQUN2QixtQkFBbUI7RUFDbkIsMkJBQW9CO0VBQXBCLG9CQUFvQjtFQUNwQix3QkFBdUI7VUFBdkIsdUJBQXVCO0VBQ3ZCLHlCQUFtQjtVQUFuQixtQkFBbUI7RUFDbkIsV0FBVztBQUNiO0VBQ0U7SUFDRSxrQkFBa0I7RUFDcEI7RUFDQTtJQUNFLGdCQUFnQjtFQUNsQjtFQUNBO0lBQ0U7TUFDRSxXQUFXO01BQ1gsWUFBWTtNQUNaLGVBQWU7TUFDZixXQUFXO01BQ1gsdUJBQXVCO01BQ3ZCLG1CQUFtQjtNQUNuQiwyQkFBb0I7TUFBcEIsb0JBQW9CO01BQ3BCLHdCQUF1QjtjQUF2Qix1QkFBdUI7TUFDdkIseUJBQW1CO2NBQW5CLG1CQUFtQjtNQUNuQixXQUFXO0lBQ2I7SUFDQTtNQUNFLGtCQUFrQjtJQUNwQjtFQUNGIiwiZmlsZSI6InNyYy9hcHAvanVlZ29zL0RpZXptaWwvRGllek1pbC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZvcm1hIHtcclxuICB3aWR0aDogNXJlbTsgIFxyXG4gIGhlaWdodDogNXJlbTtcclxuICBmb250LXNpemU6IDNyZW07XHJcbiAgY29sb3I6d2hpdGU7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7XHJcbiAgYm9yZGVyLXJhZGl1czogMXJlbTtcclxuICBkaXNwbGF5OiBpbmxpbmUtZmxleDtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIG1hcmdpbjoxMHB4O1xyXG59XHJcbiAgLnRleHQtYWxpZ24tY2VudGVye1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIH1cclxuICAubXlDbGFzc3tcclxuICAgIGNvbG9yIDogZGFya2dyYXk7XHJcbiAgfVxyXG4gIEBtZWRpYSAobWF4LXdpZHRoOiA1MDBweCkge1xyXG4gICAgLmZvcm1hIHtcclxuICAgICAgd2lkdGg6IDNyZW07ICBcclxuICAgICAgaGVpZ2h0OiAzcmVtO1xyXG4gICAgICBmb250LXNpemU6IDMwcHg7XHJcbiAgICAgIGNvbG9yOndoaXRlO1xyXG4gICAgICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcclxuICAgICAgYm9yZGVyLXJhZGl1czogMXJlbTtcclxuICAgICAgZGlzcGxheTogaW5saW5lLWZsZXg7XHJcbiAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAgICBtYXJnaW46MTBweDtcclxuICAgIH1cclxuICAgIC5teUNsYXNze1xyXG4gICAgICBjb2xvciA6IGNoYXJ0cmV1c2U7XHJcbiAgICB9XHJcbiAgfVxyXG4gXHJcbiAgIl19 */");
+
+/***/ }),
+
+/***/ "./src/app/juegos/Diezmil/DiezMil.component.ts":
+/*!*****************************************************!*\
+  !*** ./src/app/juegos/Diezmil/DiezMil.component.ts ***!
+  \*****************************************************/
+/*! exports provided: DiezMilComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DiezMilComponent", function() { return DiezMilComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _dado_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dado.component */ "./src/app/juegos/Diezmil/dado.component.ts");
+/* harmony import */ var src_app_usuarios_usuario_VecUsuarios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/usuarios/usuario/VecUsuarios */ "./src/app/usuarios/usuario/VecUsuarios.ts");
+/* harmony import */ var src_app_usuarios_usuario_usuario_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/usuarios/usuario/usuario.component */ "./src/app/usuarios/usuario/usuario.component.ts");
+
+
+
+
+
+let DiezMilComponent = class DiezMilComponent {
+    constructor() {
+        this.dados = [];
+        this.usuario = '';
+        this.usuarioID = 0;
+        this.selectedCount = 0;
+        this.turno = 'Jugar';
+        this.totales = 0;
+        this.value = 0;
+        this.partida = 0;
+        this.tiros = 0;
+        this.acumulado = 0;
+        this.vecPuntaje = [];
+        this.vecUser = src_app_usuarios_usuario_VecUsuarios__WEBPACK_IMPORTED_MODULE_3__["VecUsuario"].getInstance();
+    }
+    ngOnInit() {
+        this.cantidad = 5;
+        for (let i = 0; i < this.cantidad; i++) {
+            this.dados.push(new _dado_component__WEBPACK_IMPORTED_MODULE_2__["DadoComponent"](i));
+        }
+        for (let i = 0; i < this.cantidad; i++) {
+            this.dados[i].valor = Math.trunc(Math.random() * 6) + 1;
+        }
+        for (let i = 0; i < this.vecUser["vec"].length; i++) {
+            this.vecUser["vec"][i]._puntajes.push(new src_app_usuarios_usuario_usuario_component__WEBPACK_IMPORTED_MODULE_4__["puntaje"]('Total', '0'));
+        }
+        this.cambiarJugador();
+    }
+    lanzar() {
+        let flag = true;
+        for (let i = 0; i < this.cantidad; i++) {
+            if (!this.dados[i].selected)
+                flag = false;
+        }
+        if (!flag || this.tiros == 0) {
+            this.tiros++;
+            this.acumulado += this.partida;
+            this.partida = 0;
+            if (this.selectedCount != this.cantidad) {
+                for (let i = 0; i < this.cantidad; i++) {
+                    if (this.dados[i].selected)
+                        this.dados[i].lanzar();
+                }
+            }
+            else {
+                this.selectedCount = 0;
+                for (let i = 0; i < this.cantidad; i++) {
+                    this.dados[i].selected = true;
+                }
+                this.vecPuntaje = [];
+                this.lanzar();
+            }
+            let vecAux = [];
+            for (let i = 0; i < this.cantidad; i++) {
+                let ID = this.dados[i].ID;
+                let valor = this.dados[i].valor;
+                let selected = this.dados[i].selected;
+                let tiros = this.tiros;
+                if (this.vecPuntaje.find(x => x.ID == this.dados[i].ID) == undefined) {
+                    vecAux.push(new _dado_component__WEBPACK_IMPORTED_MODULE_2__["DadoComponent"](ID, valor, selected, tiros));
+                }
+            }
+            if (this.ValidarIguales(vecAux) == 0) {
+                this.cambiarJugador();
+            }
+        }
+    }
+    cambiarJugador() {
+        this.usuario = this.vecUser["vec"][this.usuarioID]._nombre;
+        this.usuarioID = this.vecUser["vec"][this.usuarioID]._jugador;
+        let count = this.vecUser["vec"].length;
+        if (Number(this.usuarioID) == count) {
+            this.usuarioID = 0;
+        }
+        this.turno = 'Jugar';
+        this.puntaje = this.vecUser["vec"][this.usuarioID]._puntajes;
+        this.totales = Number(this.vecUser["vec"][this.usuarioID]._puntajes[0]._valor);
+        this.ReiniciarDados();
+        this.partida = 0;
+        this.acumulado = 0;
+        this.tiros = 0;
+    }
+    Select(index) {
+        if (this.dados[index].selected) {
+            this.dados[index].selected = false;
+            this.selectedCount++;
+            for (let i = 0; i < this.cantidad; i++) {
+                if (!this.dados[i].selected) {
+                    let index = this.vecPuntaje.find(x => x.ID == this.dados[i].ID);
+                    if (index == undefined) {
+                        let ID = this.dados[i].ID;
+                        let valor = this.dados[i].valor;
+                        let selected = this.dados[i].selected;
+                        let tiros = this.tiros;
+                        this.vecPuntaje.push(new _dado_component__WEBPACK_IMPORTED_MODULE_2__["DadoComponent"](ID, valor, selected, tiros));
+                    }
+                }
+            }
+        }
+        else {
+            if (this.vecPuntaje[index].tiro == this.tiros) {
+                this.vecPuntaje.splice(index, 1);
+                this.dados[index].selected = true;
+                this.selectedCount--;
+            }
+        }
+        this.vecPuntaje.sort();
+        if (this.selectedCount == 5) {
+            this.value = this.ValidarEscalera(this.vecPuntaje);
+        }
+        this.value = this.ValidarIguales(this.vecPuntaje);
+        this.partida = this.value;
+    }
+    ReiniciarDados() {
+        for (let i = 0; i < this.cantidad; i++)
+            this.dados[i].selected = true;
+    }
+    MarcarPuntaje() {
+        if ((Number(this.vecUser["vec"][this.usuarioID]._puntajes[0]._valor) == 0 && this.acumulado == 750) || ((Number(this.vecUser["vec"][this.usuarioID]._puntajes[0]._valor) > 750))) {
+            this.vecUser["vec"][this.usuarioID]._puntajes[0]._valor = String(Number(this.vecUser["vec"][this.usuarioID]._puntajes[0]._valor) + this.acumulado);
+            let vecPuntaje = [];
+            this.acumulado = 0;
+            this.turno = 'Jugar';
+            if (this.ValidarFinal()) {
+                alert('El ganador es: ' + this.ganador);
+            }
+            else {
+                this.cambiarJugador();
+            }
+        }
+    }
+    ValidarEscalera(array) {
+        let i = 0;
+        while (i < array.length - 1) {
+            if (array[i].valor != array[i].valor - 1) {
+                return 0;
+            }
+        }
+        if (array[0].valor == 1 && array[1].valor == 3
+            && array[2].valor == 4 && array[3].valor == 5
+            && array[4].valor == 6) {
+            return 0;
+        }
+        return 500;
+    }
+    ValidarIguales(array) {
+        let flag = false;
+        let anterior;
+        let cont = 1;
+        let cont2 = 0;
+        let numeros = 0;
+        let Selectvalue = 0;
+        let value = 0;
+        let arrayUsados = [];
+        let i = 0;
+        // let i = 0
+        let siguiente = true;
+        if (array.length > 1) {
+            for (let i = 0; i <= array.length - 2; i++) {
+                if (array[i].valor == array[i + 1].valor && array[i].tiro == this.tiros && array[i + 1].tiro == this.tiros) {
+                    cont++;
+                    Selectvalue = array[i].valor;
+                    arrayUsados.push(array[i].ID);
+                }
+            }
+        }
+        if (cont == 3) {
+            value = Selectvalue * 100;
+        }
+        for (let i = 0; i <= array.length - 1; i++) {
+            if (arrayUsados.find(x => x.ID == array[i].ID) == undefined && array[i].tiro == this.tiros) {
+                switch (array[i].valor) {
+                    case 1:
+                        value += 100;
+                        break;
+                    case 5:
+                        value += 50;
+                        break;
+                }
+            }
+        }
+        return value;
+    }
+    ValidarFinal() {
+        let bFinal = false;
+        let vecGanador = [];
+        if (Number(this.vecUser["vec"][this.usuarioID]._puntajes[0]._valor) < 10000 || Number(this.vecUser["vec"][this.usuarioID]._puntajes[0]._valor) == NaN) {
+            bFinal = false;
+        }
+        return bFinal;
+    }
+};
+DiezMilComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-DiezMil',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./DiezMil.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/juegos/Diezmil/DiezMil.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./DiezMil.component.css */ "./src/app/juegos/Diezmil/DiezMil.component.css")).default]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+], DiezMilComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/juegos/Diezmil/dado.component.css":
+/*!***************************************************!*\
+  !*** ./src/app/juegos/Diezmil/dado.component.css ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\r\n \r\n  \r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2p1ZWdvcy9EaWV6bWlsL2RhZG8uY29tcG9uZW50LmNzcyJ9 */");
+
+/***/ }),
+
+/***/ "./src/app/juegos/Diezmil/dado.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/juegos/Diezmil/dado.component.ts ***!
+  \**************************************************/
+/*! exports provided: DadoComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DadoComponent", function() { return DadoComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let DadoComponent = class DadoComponent {
+    constructor(i, valor, selected, tiro) {
+        this.selected = true;
+        this.ID = i;
+        this.valor = valor;
+        this.selected = selected;
+        this.tiro = tiro;
+    }
+    ngOnInit() {
+        this.valor = Math.trunc(Math.random() * 6) + 1;
+    }
+    lanzar() {
+        this.valor = Math.trunc(Math.random() * 6) + 1;
+    }
+};
+DadoComponent.ctorParameters = () => [
+    { type: Number },
+    { type: Number },
+    { type: Boolean },
+    { type: Number }
+];
+DadoComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-dado',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./dado.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/juegos/Diezmil/dado.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./dado.component.css */ "./src/app/juegos/Diezmil/dado.component.css")).default]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [Number, Number, Boolean, Number])
+], DadoComponent);
 
 
 
@@ -1782,6 +2111,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Generala_generala_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Generala/generala.component */ "./src/app/juegos/Generala/generala.component.ts");
 /* harmony import */ var _usuarios_usuarios_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../usuarios/usuarios.module */ "./src/app/usuarios/usuarios.module.ts");
 /* harmony import */ var _GeneralaObligada_generala_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./GeneralaObligada/generala.component */ "./src/app/juegos/GeneralaObligada/generala.component.ts");
+/* harmony import */ var _Diezmil_DiezMil_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Diezmil/DiezMil.component */ "./src/app/juegos/Diezmil/DiezMil.component.ts");
+
 
 
 
@@ -1794,14 +2125,14 @@ let JuegosModule = class JuegosModule {
 };
 JuegosModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-        declarations: [_tateti_tateti_component__WEBPACK_IMPORTED_MODULE_4__["TATETIComponent"], _Generala_generala_component__WEBPACK_IMPORTED_MODULE_5__["GENERALAComponent"], _GeneralaObligada_generala_component__WEBPACK_IMPORTED_MODULE_7__["GENERALAObligadaComponent"]],
+        declarations: [_tateti_tateti_component__WEBPACK_IMPORTED_MODULE_4__["TATETIComponent"], _Generala_generala_component__WEBPACK_IMPORTED_MODULE_5__["GENERALAComponent"], _GeneralaObligada_generala_component__WEBPACK_IMPORTED_MODULE_7__["GENERALAObligadaComponent"], _Diezmil_DiezMil_component__WEBPACK_IMPORTED_MODULE_8__["DiezMilComponent"]],
         imports: [
             _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
             _angular_material_button__WEBPACK_IMPORTED_MODULE_3__["MatButtonModule"],
             _usuarios_usuarios_module__WEBPACK_IMPORTED_MODULE_6__["UsuariosModule"]
         ],
         providers: [],
-        exports: [_tateti_tateti_component__WEBPACK_IMPORTED_MODULE_4__["TATETIComponent"], _Generala_generala_component__WEBPACK_IMPORTED_MODULE_5__["GENERALAComponent"], _GeneralaObligada_generala_component__WEBPACK_IMPORTED_MODULE_7__["GENERALAObligadaComponent"]]
+        exports: [_tateti_tateti_component__WEBPACK_IMPORTED_MODULE_4__["TATETIComponent"], _Generala_generala_component__WEBPACK_IMPORTED_MODULE_5__["GENERALAComponent"], _GeneralaObligada_generala_component__WEBPACK_IMPORTED_MODULE_7__["GENERALAObligadaComponent"], _Diezmil_DiezMil_component__WEBPACK_IMPORTED_MODULE_8__["DiezMilComponent"]]
     })
 ], JuegosModule);
 
