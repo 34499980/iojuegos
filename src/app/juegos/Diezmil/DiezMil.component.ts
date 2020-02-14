@@ -46,44 +46,49 @@ export class DiezMilComponent implements OnInit {
     this.cambiarJugador();
   }
   public lanzar(){ 
-    let flag: boolean = true
-    for(let i=0; i<this.cantidad;i++){
-      if(!this.dados[i].selected)
-         flag = false;
-    }
-    if(!flag || this.tiros == 0){     
-      this.tiros++;
-      this.acumulado += this.partida; 
-
-      this.partida = 0;
-      if(this.selectedCount != this.cantidad){
+    if(this.turno == "Cambiar jugador"){
+      this.cambiarJugador()
+    }else{
+      let flag: boolean = true
       for(let i=0; i<this.cantidad;i++){
-          if(this.dados[i].selected)
-            this.dados[i].lanzar();
-        }
-      }else{
-        this.selectedCount = 0;
+        if(!this.dados[i].selected)
+          flag = false;
+      }
+      this.turno = "Lanzar"
+      if(!flag || this.tiros == 0){     
+        this.tiros++;
+        this.acumulado += this.partida; 
+
+        this.partida = 0;
+        if(this.selectedCount != this.cantidad){
         for(let i=0; i<this.cantidad;i++){
-          this.dados[i].selected = true;
-          this.dados[i].lanzar();
-        }     
-        //this.vecPuntaje =[];        
-        //this.lanzar();
-      }
-      let vecAux: DadoComponent[] = [];
-      for(let i = 0; i<this.cantidad;i++){
-        let ID = this.dados[i].ID
-        let valor = this.dados[i].valor
-        let selected = this.dados[i].selected
-        let tiros = this.tiros
-        if(this.vecPuntaje.find(x => x.ID == this.dados[i].ID)==undefined){
-            vecAux.push(new DadoComponent(ID,valor,selected,tiros))
+            if(this.dados[i].selected)
+              this.dados[i].lanzar();
+          }
+        }else{
+          this.selectedCount = 0;
+          for(let i=0; i<this.cantidad;i++){
+            this.dados[i].selected = true;
+            this.dados[i].lanzar();
+          }     
+          this.vecPuntaje =[];        
+          //this.lanzar();
         }
-      }
-      if(this.ValidarIguales(vecAux)==0){
-        this.cambiarJugador();
-        
-      }
+        let vecAux: DadoComponent[] = [];
+        for(let i = 0; i<this.cantidad;i++){
+          let ID = this.dados[i].ID
+          let valor = this.dados[i].valor
+          let selected = this.dados[i].selected
+          let tiros = this.tiros
+          if(this.vecPuntaje.find(x => x.ID == this.dados[i].ID)==undefined){
+              vecAux.push(new DadoComponent(ID,valor,selected,tiros))
+          }
+        }
+        if(this.ValidarIguales(vecAux)==0){
+          this.turno = "Cambiar jugador"
+          
+        }
+    }
   }
     
 }
@@ -94,13 +99,15 @@ export class DiezMilComponent implements OnInit {
     if(  Number(this.usuarioID)== count){
       this.usuarioID=0
     }
-    this.turno = 'Jugar'
+    this.turno = 'Lanzar'
     this.puntaje = this.vecUser["vec"][this.usuarioID]._puntajes; 
     this.totales = Number(this.vecUser["vec"][this.usuarioID]._puntajes[0]._valor)     
     this.ReiniciarDados()
     this.partida = 0;
     this.acumulado = 0;
     this.tiros = 0;
+    this.selectedCount = 0;
+    this.vecPuntaje = [];
    
    
   }
@@ -120,14 +127,15 @@ export class DiezMilComponent implements OnInit {
             }
           }
         }
-     }else{      
-       if(this.vecPuntaje[index].tiro == this.tiros){
-           this.vecPuntaje.splice(index,1);
+     }else{  
+      let auxIndex =  this.vecPuntaje.findIndex(x => x.ID == index)
+       if(this.vecPuntaje[auxIndex].tiro == this.tiros){
+           this.vecPuntaje.splice(auxIndex,1);
            this.dados[index].selected=true;
            this.selectedCount--
        }
      }     
-    this.vecPuntaje.sort();
+    this.vecPuntaje.sort((a,b)=>a.valor - b.valor);
     if(this.selectedCount == 5){
       this.value = this.ValidarEscalera(this.vecPuntaje);
     }
@@ -135,15 +143,17 @@ export class DiezMilComponent implements OnInit {
     this.partida = this.value
   }
   private ReiniciarDados(){
-    for(let i=0; i<this.cantidad;i++)     
+    for(let i=0; i<this.cantidad;i++) {    
       this.dados[i].selected = true;
+      this.dados[i].lanzar()
+    }
   }
   public MarcarPuntaje(){
-    if((Number(this.vecUser["vec"][this.usuarioID]._puntajes[0]._valor) == 0 && this.acumulado == 750)||((Number(this.vecUser["vec"][this.usuarioID]._puntajes[0]._valor)>750))){
+    if((Number(this.vecUser["vec"][this.usuarioID]._puntajes[0]._valor) == 0 && this.acumulado+this.partida >= 750)||((Number(this.vecUser["vec"][this.usuarioID]._puntajes[0]._valor)>=750))){
        this.vecUser["vec"][this.usuarioID]._puntajes[0]._valor = String(Number(this.vecUser["vec"][this.usuarioID]._puntajes[0]._valor)+ this.acumulado+this.partida)
     
-      let vecPuntaje: number[] =[]
-     this.acumulado = 0;
+     
+     
   
      this.turno = 'Jugar';
     
@@ -164,6 +174,7 @@ export class DiezMilComponent implements OnInit {
       if(array[i].valor != array[i+1].valor-1){
         return 0
       }
+      i++;
     }
     if(array[0].valor == 1 && array[1].valor == 3
        && array[2].valor == 4 && array[3].valor == 5
@@ -173,7 +184,7 @@ export class DiezMilComponent implements OnInit {
     return 500;   
   }
   public ValidarIguales(array: any[]):number{  
-    let cont : number= 0        
+    let cont : number= 1        
     let Selectvalue : number = 0;
     let value : number = 0;
     let arrayUsados: any [] = [];
@@ -182,7 +193,7 @@ export class DiezMilComponent implements OnInit {
    
     if(array.length > 1){
     for(let i = 0; i<=array.length-2; i++){
-        if(array[i].valor==array[i+1].valor && array[i].tiro== this.tiros && array[i+1].tiro == this.tiros){
+        if(array[i].valor==array[i+1].valor && array[i].tiro== this.tiros && array[i+1].tiro == this.tiros && cont != 3){
           cont++;
           Selectvalue = array[i].valor;
           arrayUsados.push(array[i].ID)
