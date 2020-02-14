@@ -201,7 +201,14 @@ export class DiezMilComponent implements OnInit {
       }
     }
     if(cont==3){
-      value = Selectvalue * 100;
+      switch(Selectvalue){
+        case 1:
+          value = Selectvalue * 1000;
+          break;
+          default:
+            value = Selectvalue * 100;
+            break;
+      }
     }
     for(let i = 0; i<= array.length-1;i++){
       if(arrayUsados.find(x => x.ID == array[i].ID)==undefined && array[i].tiro == this.tiros){
